@@ -2,7 +2,7 @@
 
 DES-Simulator für die DES-Spielwiese.
 
-Aufgabe 6)
+Aufgabe 6)<br>
 Nachdem in constructProcessFlow(Ckass<?> c) die HashMaps steps und delays erzeugt wurden, werden diese an den ProcessValidator übergeben.
 Der ProcessValidator überprüft jeweils die Methoden in den Maps und wirft ggbf. eine ModelException.
 
