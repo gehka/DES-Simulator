@@ -11,7 +11,7 @@ Zum anderen müssen die Events auch eine Markierung erhalten, damit die Zuordnun
 
 Lösung: Um die Durchführung von Simulationen zu parallelisieren, müssen mehrereThreadsinnerhalb des „newFixedThreadPool“verwendet werden.Jeder dieser Threads bekommt eine eigene Scheduler Instanz als Singleton zugewiesen(Übergabe an den Thread).Somit wird sichergestellt, dass nur ein Thread Zugriff auf einen Scheduler hat. Es kann somit wederzu „LostUpdates“kommen,noch kann die Ausführungsreihenfolge der Events durcheinander gebracht werden.
 
-### Aufgabe 6)<br>
+### Aufgabe 6a)<br>
 Nachdem in constructProcessFlow(Class<?> c) die HashMaps steps und delays erzeugt wurden, werden diese an den ProcessValidator übergeben.l
 Der ProcessValidator überprüft jeweils die Methoden in den Maps und wirft ggf. eine ModelException mit aussagekräftiger Fehlermeldung.
 
