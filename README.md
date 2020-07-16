@@ -3,9 +3,9 @@
 DES-Simulator für die DES-Spielwiese.
 
 ### Aufgabe 5c)<br>
-Problem: Der Scheduler ist als Singleton implementiert, d.h. bei einer Parallelisierung der Simulation durch die Verwendung mehrererThreads wird er somit zu einer gemeinsamen Ressource.
+Problem: Der Scheduler ist als Singleton implementiert, d.h. bei einer Parallelisierung der Simulation durch die Verwendung mehrerer Threads wird er somit zu einer gemeinsamen Ressource.
 
-Das führt zu großen Komplikationen. Zum einen muss für einen wechselseitigen Zugriff auf die PriorityQueue gesorgt werden, damit es nicht zu sogenanntenLost Updates kommen kann(bspw. durch Verwendung einer Semaphore).
+Das führt zu großen Komplikationen. Zum einen muss für einen wechselseitigen Zugriff auf die PriorityQueue gesorgt werden, damit es nicht zu sogenannten Lost Updates kommen kann (bspw. durch Verwendung einer Semaphore).
 
 Zum anderen müssen die Events auch eine Markierung erhalten, damit die Zuordnung zu der betreffenden Simulation sichergestellt wird (Stichwort: Object Space).
 
